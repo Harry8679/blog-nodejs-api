@@ -10,6 +10,7 @@ const commentRouter = require('./routes/comment.route');
 const categoryRouter = require('./routes/category.route');
 
 // middlewares
+app.use(express.json()); // Pass incoming payload
 // userRoutes
 app.use('/api/v1/users', userRouter);
 // postRoutes
